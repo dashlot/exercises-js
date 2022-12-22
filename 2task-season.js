@@ -1,12 +1,13 @@
 function getSeasons (monthNumber) {
-    if ( 1>= monthNumber || monthNumber <=2 || monthNumber === 12 || monthNumber) {
+    if ( monthNumber == 0 ) {
+        return('false');
+    } else if (monthNumber <=2 || monthNumber == 12 ) {
         return(`winter`);
-    } else if ( 3>= monthNumber || monthNumber <=5 ) {
+    } else if ( monthNumber <=5 ) {
         return(`spring`);
-        console.log('abc');
-    } else if ( 6 >= monthNumber || monthNumber <=8 ) {
+    } else if ( monthNumber <=8 ) {
         return(`summer`);
-    } else if ( 9 >= monthNumber || monthNumber <=11 ) {
+    } else if ( monthNumber <=11 ) {
         return(`autumn`);
     } else {
         return(`a mistake`);
