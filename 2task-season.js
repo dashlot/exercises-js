@@ -1,17 +1,19 @@
 function getSeasons (monthNumber) {
-    if ( monthNumber == 1 || monthNumber == 2 || monthNumber == 12 ) {
-        return(`It's winter`);
-    } else if ( 3 >= monthNumber || monthNumber <= 5 ) {
-        return(`It's spring`);
+    if ( 1>= monthNumber || monthNumber <=2 || monthNumber === 12 || monthNumber) {
+        return(`winter`);
+    } else if ( 3>= monthNumber || monthNumber <=5 ) {
+        return(`spring`);
+        console.log('abc');
     } else if ( 6 >= monthNumber || monthNumber <=8 ) {
-        return(`It's summer`);
+        return(`summer`);
     } else if ( 9 >= monthNumber || monthNumber <=11 ) {
-        return(`It's autumn`);
+        return(`autumn`);
     } else {
-        return(`It's a mistake`);
+        return(`a mistake`);
     }
 }
 
-let number = prompt('Введите номер месяца');
+let number = +prompt('Insert number of month');
 let getSeasonByNumber = getSeasons(number);
-alert(number + ` — ` + getSeasonByNumber)
+alert(number + ` month is ` + getSeasonByNumber)
+
