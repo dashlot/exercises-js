@@ -19,10 +19,4 @@ let driverLicenseAble2 = canGetDriverLicenseV3(yourAge);
 console.log(driverLicenseAble2);
 
 
-// 2nd Task (seasons)
 
-function getSeasons (monthNumber) {
-    console.log(monthNumber);
-}
-
-getSeasons(12);
