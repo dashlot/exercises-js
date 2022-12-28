@@ -18,15 +18,23 @@ function getNameOfWeekDays (weekDaysNumber) {
     }
 } 
 
-let numberDay = prompt(`Введите номер дня недели`);
-let getDay = getNameOfWeekDays(numberDay);
-alert(numberDay + ` — ` + getDay);
+function getNameOfWeekDaysV2 (weekDaysNumber) {
+    let result = (weekDaysNumber == 1) ? 'Monday' :
+        (weekDaysNumber == 2) ? 'Tuesday' :
+            (weekDaysNumber == 3) ? 'Wednesday' :
+                (weekDaysNumber == 4) ? 'Thursday' :
+                    (weekDaysNumber == 5) ? 'Friday' :
+                        (weekDaysNumber == 6) ? 'Saturday' :
+                            (weekDaysNumber == 7) ? 'Sunday' :
+                            `This day doesn't exist`
+    return result;
+}
 
-// (weekDaysNumber == 1) ? 'Monday' :
-// (weekDaysNumber == 2) ? 'Tuesday' :
-// (weekDaysNumber == 3) ? 'Wednesday' :
-// (weekDaysNumber == 4) ? 'Thursday' :
-// (weekDaysNumber == 5) ? 'Friday' :
-// (weekDaysNumber == 6) ? 'Saturday' :
-// (weekDaysNumber == 7) ? 'Sunday' :
-// `This day doesn't exist`
+
+let numberDay2 = prompt(`Введите номер дня недели`);
+let getDay2 = getNameOfWeekDaysV2(numberDay2);
+alert(numberDay2 + ` — ` + getDay2);
+
+
+
+
