@@ -16,5 +16,5 @@ function getSeasons (monthNumber) {
 
 let number = +prompt('Insert number of month');
 let getSeasonByNumber = getSeasons(number);
-alert(number + ` month is ` + getSeasonByNumber)
+alert(number + ` month is ` + getSeasonByNumber);
 
